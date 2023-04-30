@@ -24,7 +24,7 @@
 </div><br>
 <div align="center">
  <div>🔶 아이디 찾기 폼 디자인(naver)-bootstrap</div><br>
- <img src="https://user-images.githubusercontent.com/115056845/235332633-2d98b36c-9405-4c22-8970-2ab2600155f3.gif">
+ <img src="https://user-images.githubusercontent.com/115056845/235334312-d6f91ee3-b913-49a1-9d40-bade06248689.gif">
 </div><br>
 <div align="center">
  <div>🔶 카페 페이지 디자인(naver)</div><br>
@@ -55,6 +55,14 @@
  <img src="https://user-images.githubusercontent.com/115056845/235333464-3997e02b-2460-4f0b-9ee5-7a09e7a06f5f.gif">
 </div><br>
 <div align="center">
- <div>🔶 자바스크립트 회원가입JS(naver)</div><br>
- <img src="">
+ <div>🔶 jQuery 사용법 및 예시</div><br>
+ <img src="https://user-images.githubusercontent.com/115056845/235334635-897b9675-a5e5-4e71-ab1b-486f19e9e406.gif">
+</div><br>
+<div align="center">
+ <div>🔶 jQuery 관련 up&down 문제</div><br>
+ <img src="https://user-images.githubusercontent.com/115056845/235334684-5d3daa49-fd42-4480-bbc3-bec7248088f8.gif">
+</div><br>
+<div align="center">
+ <div>🔶 자바스크립트 개인정보페이지 만들기</div><br>
+ <img src="https://user-images.githubusercontent.com/115056845/235335490-f7b35d49-3d26-4712-babe-319d9ff30a0e.gif">
 </div><br>
