@@ -1,1 +1,1 @@
-# kh_curriculum_static-web
+# KH 정보교육원 교육과정_Static-Web
