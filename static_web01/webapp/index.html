@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" value="작성자">
+        <meta name="Keywords" value="이 페이지를 검색할 때의 키워드 정보">
+        <meta name="generator" value="이 페이지를 만든 프로그램 및 도구">
+
+        <!-- 브라우저에 표기할 페이지 제목 -->
+        <title>브라우저에 제목 표기</title>
+
+        <!-- 폴더 정렬 바꾸기
+            - Settings 에서 folder 검색 후 Explorer : Compact Folders 체크해제
+             폴더 간격 바꾸기    
+            - Settings 에서 indent 검색 후 Workbench>Tree:indent 숫자변경
+            -->
+
+        <!-- 외부 정의 불러와서 사용 
+             상대 경로(./ 또는 경로표기 생략)
+             : 현재 열린 해당 브라우저의 웹 디렉토리 (ex) http://172.21.160.1:5500/부터 경로 시작
+
+             절대 경로(/)
+             : 무조건 루트([]) 내의 ["/", "./static_web01/webapp"]부터 경로 시작
+        -->
+
+        <!-- 참고로 
+            - type 에서 처음 image, text, audio, video 를 MIME 종류라고 함.
+              그 뒤에 오는게 확장자이고 이에 따라 실행적용되는것 
+            - rel 은 어떤 것인지 힌트를 주는거라고 생각하면 됨
+            - href (src 등 종류별로 있음)실제 적용할 파일의 경로
+              * /static/img/icon.jpeg 해당경로는 앞에 기본 도메인(http://172.30.144.1:5500/)
+              * ip,port가 생략된형태임.
+              * 404 page*Not Found (경로 찾을 수 없다는 에러임)
+              * http://172.30.144.1:5500/static/css/index.css : 외부 서버의 파일
+              * /static/css/index.css 내부 서버의 파일(현재 접속 서버의 파일)
+            -->
+        <!-- 브라우저에 표기할 아이콘 -->
+        <link type="image/jpeg" rel="icon" href="/static/img/icon.jpeg">
+
+        <!-- 외부 CSS 파일 불러오기 -->
+        <link type="text/css" rel="stylesheet" href="./static/css/index.css">
+        
+        <!-- 외부 JavaScript 파일 불러오기-->
+        <script type="text/javascript" src="./static/js/index.js"></script>
+        
+        <!-- 내부 사용 -->
+        <style type="text/css">
+            /* HTML에 직접 작성한 내부 CSS */
+            body { background-color: gray; }
+        </style>
+        <script type="text/javascript">
+            /* HTML 에 직접 작성한 내부 JavaScript */
+            window.onload = function() {
+                alert("JavaScript Run!!");
+            };
+        </script>
+
+    </head>
+    <body>
+        <h1>Hello HTML5</h1>
+        메시지 작성
+
+    </body>
+</html>

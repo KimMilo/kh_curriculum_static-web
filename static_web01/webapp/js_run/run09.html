@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 회원가입-NAVER(ver.My)</title>
+    <script type="text/javascript" src="/static/js/sample09.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/sample09.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-center">
+        <form onsubmit="return validCheck(this);">
+            <header>
+                <div class="logo-title">
+                    <h1 class="logo">NAVER</h1>
+                </div>
+            </header>
+            <section>
+                <div class="input-form-group">
+                    <div class="input-group">
+                        <label for="">아이디</label>
+                        <div class="input-icon">
+                            <div class="input-form">
+                                <input type="text" name="userid">
+                            </div>
+                            <span>@naver.com</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="">비밀번호</label>
+                        <div class="input-icon">
+                            <div class="input-form">
+                                <input class="form-control" type="password" name="password">
+                            </div>
+                            <span class="icon1">lock</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="">비밀번호 재확인</label>
+                        <div class="input-icon">
+                            <div class="input-form">
+                                <input class="form-control" type="password" name="passwordCheck">
+                            </div>
+                            <span class="icon2">lock</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-form-group">
+                    <div class="input-group">
+                        <label for="">이름</label>
+                        <div class="input-form">
+                            <input type="text" name="username">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="">생년월일</label>
+                        <div class="input-inline col-12">
+                            <input type="text" name="birthyear" placeholder="년(4자)">
+                            <select>
+                                <option>월</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <input type="text" placeholder="일">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="">성별</label>
+                        <div class="input-form">
+                            <select name="usergender">
+                                <option value="gender">성별</option>
+                                <option>남자</option>
+                                <option>여자</option>
+                                <option>선택 안함</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="">본인 확인 이메일(선택)</label>
+                        <div class="input-form">
+                            <input type="text" placeholder="선택입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-form-group">
+                    <div class="input-group">
+                        <label for="">휴대전화</label>
+                        <div class="input-form">
+                            <select>
+                                <option>니카리과 + 505</option>
+                                <option selected>대한민국 +82</option>
+                                <option>덴마크 +45</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-inline col-12">
+                            <input class="inline-w2" type="text" name="phonenumber" placeholder="전화번호 입력">
+                            <button class="btn-green" type="button">인증번호 받기</button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-form disabled">
+                            <input type="text" placeholder="인증번호 입력하세요." disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-form">
+                    <button class="btn-green" type="submit">가입하기</button>
+                </div>
+            </section>
+            <footer>
+                <div class="policy-link">
+                    <a href="#">이용약관</a> |
+                    <a href="#"><strong>개인정보처리방침</strong></a> |
+                    <a href="#">책임의 한계와 법적고지</a> |
+                    <a href="#">회원정보 고객센터</a>
+                </div>
+                <div class="corp">
+                    <a href="#">© NAVER Corp.</a>
+                </div>
+            </footer>
+        </form>
+    </div>
+</body>
+</html>

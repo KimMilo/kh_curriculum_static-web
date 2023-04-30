@@ -1,0 +1,129 @@
+/* 
+    테이블의 테두리 적용 
+    - tr은 테두리 적용 불가
+    - th, dd는 테두리 적용 가능
+    - border-collapse: collapse; cell(테두리)간의 여백을 지움
+    - border-spacing: 가로 세로; cell간의 공간을 지정함.
+*/
+
+.table-style1{
+    border-style: solid;
+    width: 300px;
+    height: 200px;
+    /* 셀과 셀 사이의 공간을 없애는 것 */
+    border-collapse: collapse;
+}
+
+.table-style1 th, .table-style1 td{
+    border-style: solid;
+}
+
+.table-style2{
+    border-style: solid;
+    width: 300px;
+    height: 200px;
+    /* 셀과 셀 사이의 공간을 (가로 세로 크기) 지정 */
+    border-spacing: 10px 10px; 
+}
+
+.table-style2 th, .table-style2 td{
+    border-style: solid;
+}
+
+/* table td 내 클래스로 적용 */
+table td.center{
+    text-align: center;
+}
+
+table td.right{
+    text-align: right;
+}
+
+/* colgroup col 배경색 적용 
+    (참고로 colgroup 에서 col에는 색상, 너비, 가시성(visibility), 만 적용 가능)
+*/
+
+.table-style3{
+    border-style: solid;
+    width: 300px;
+    height: 200px;
+    /* 셀과 셀 사이의 공간을 없애는 것 */
+    border-collapse: collapse;
+}
+
+.table-style3 th, .table-style3 td{
+    border-style: solid;
+}
+
+table .bg-color-blue{
+    background-color: blue;
+}
+
+table .bg-color-red{
+    background-color: red;
+}
+
+/* 
+    수직 정렬
+*/
+
+.table-style4{
+    border-style: solid;
+    width: 300px;
+    height: 200px;
+    /* 셀과 셀 사이의 공간을 없애는 것 */
+    border-collapse: collapse;
+}
+
+.table-style4 th, .table-style4 td{
+    border-style: solid;
+}
+
+table .top{
+    vertical-align: top;
+}
+
+table .middle{
+    vertical-align: middle;
+}
+
+table .bottom{
+    vertical-align: bottom;
+}
+
+/* colgroup col 너비 지정하기 */
+
+.table-style5{
+    border-style: solid;
+    width: 300px;
+    height: 200px;
+    /* 셀과 셀 사이의 공간을 없애는 것 */
+    border-collapse: collapse;
+}
+
+.table-style5 th, .table-style5 td{
+    border-style: solid;
+}
+
+table .w60{
+    width: 60px;
+}
+
+table .w120{
+    width: 120px;
+}
+
+table .w180{
+    width: 180px;
+}
+
+table.layout-fixed{
+    table-layout: fixed; 
+    /* 
+        - table-layout: fixed; 가 없으면 기존 테이블 크기(width: 300px) 내에서 비율대로 너비조정
+        - table-layout: fixed; 는 
+          기존 테이블 크기(width: 300px)가 아닌 col 에 지정한 width가 고정될 수 있도록 설정 
+        - 이 때, col에 지정한 너비의 합이 300px가 넘어가면 너비가 커지지만, 300px 보다 작아지면
+          기존 테이블 크기인 300px에서 비율대로 조정됨.
+    */
+}

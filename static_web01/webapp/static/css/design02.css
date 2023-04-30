@@ -1,0 +1,67 @@
+.table-normal{
+    border-style: solid;
+    border-width: thin;
+    border-collapse: collapse;
+    width: 100%; /* 부모크기가 기준임 부모크기 대비 % */
+}
+.table-normal th,
+.table-normal td{
+    border-style: solid;
+    border-width: thin;
+}
+
+
+.table-horizon{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-horizon th,
+.table-horizon td{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+/* 
+    홀수 만 배경색 적용하기 
+        - nth-child(odd)
+        - nth-child(2n-1)
+*/
+.striped tbody tr:nth-child(odd){
+    background-color: rgb(248, 248, 248);
+}
+.hover tbody tr:hover{
+    background-color: rgb(224, 224, 224);
+    text-decoration: underline;
+}
+
+
+.paging .page-link{
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+}
+.paging .page-link:hover{
+    background-color: dimgrey;
+    color: white;
+}
+.paging .active{
+    background-color: dimgrey;
+    color: white;
+}
+.paging.center{
+    text-align: center;
+}
+.paging.right{
+    text-align: right;
+}
+.paging.left{
+    text-align: left;
+}
+.paging.round .page-link{
+    border-radius: 25%; /* 50% 는 둥글게 */
+}
+.paging.circle .page-link{
+    border-radius: 50%;
+}

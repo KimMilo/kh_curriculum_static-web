@@ -1,0 +1,53 @@
+/* 
+    position: absolute;로 지정한 후에 top,right,bottom,left 사용 가능함.
+*/
+
+.position-absolute{
+    width: 250px;
+    height: 250px;
+}
+    
+.position-absolute > .move{
+    position: absolute;
+
+    /* 해당영역 왼쪽에서 50px, 위쪽에서 80px 위치에 배치함 */
+    left: 50px;
+    top: 80px;
+}
+
+
+/* 
+    position: relative;로 지정한 후에 top,right,bottom,left 사용 가능함.
+*/
+
+.position-relative{
+    width: 250px;
+    height: 250px;
+}
+
+.position-relative > .move{
+    position: relative;
+
+    /* 원래 자신의 위치에서 왼쪽에서 50px, 위쪽에서 80px 위치로 배치함 
+       -absolute는 해당영역에서부터 배치되나 relative는 원래 자신의 위치에서
+        배치 된다는점에서 차이가 있음. */
+    left: 50px;
+    top: 80px;
+}
+
+/* 
+    position: fixed;로 지정한 후에 top,right,bottom,left 사용 가능함.
+*/
+
+.position-fixed{
+    width: 250px;
+    height: 250px;
+}
+
+.position-fixed > .move{
+    position: fixed;
+
+    /* 왼쪽에서 50px, 아래쪽에서 40px 위치에 고정적으로(scroll 움직여도 보임) 배치함 */
+    left: 50px;
+    bottom: 40px;
+}

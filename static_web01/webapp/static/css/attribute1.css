@@ -1,0 +1,179 @@
+ /* 
+    글자 크기를 변경
+
+    px : 픽셀 (브라우저 기본 16px)
+    pt : 폰트 (브라우저 기본 12pt)
+    em : 상대적인 크기로 설정 가능
+
+    font-size : 2em; 2배 크기
+    font-size : 0.5m; 0.5 크기 
+*/
+
+.fs1{
+        /* font-size: 18px; */
+       font-size: 0.5em;
+}
+
+/*
+    글자 두께를 변경
+
+    두께는 100부터 900까지(100씩 단위로) 사용 가능,
+    lighter(가늘게), bolder(두껍게) 명사로도 사용가능.
+
+*/
+.fw1{
+        font-weight: 900;
+}
+
+/*
+    글자를 이탤릭체로 변경
+*/
+.fs2{
+    font-style: italic;
+}
+
+/*
+    폰트 종류를 변경
+
+    폰트 종류가 pc마다 없을수도 있기 때문에 없을 경우 family 그룹 지정도 가능.
+    예) font-family: 'Courier New', Courier, monospace;
+*/
+.ffl{
+    /* font-family: '맑은 고딕'; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+    폰트 색상을 변경
+
+    컬러명 지정 또는 해당 색상의 코드(RGB)를 지정
+    - 빨간색은 첫번째 2자리가 FF / 초록색은 중간 2자리가 FF / 파란색은 끝 2자리가 FF / 모든 자리 0이면 블랙
+      모든 자리를 F로 하면 흰색
+    - 또는 rgb()로 선택 가능하고 vscode는 마우스 대면 색상 지정할 수 있게 창 뜸.
+    - rgb(,,,0) 4번째가 0 ~ 1 사이로 투명도 선택가능(0부터 1점점 진해짐)
+
+*/
+.c1{
+    /*
+    color:#FF0000;
+    color:#00FF00;
+    color:#0000FF;
+    color:#000000;
+    color:#ffffff;
+    color:rgb(0,255,0);
+    color:rgb(113,56,91,1);
+    */
+    color:rgb(113,56,91,1);
+}
+
+/*
+    
+    .tb1 a 테그 밑줄을 none으로 없애기.
+
+*/
+
+.tb1 a {
+    /* 밑줄 등 아예 없애버리기 */
+     text-decoration:none;
+}
+
+/*
+    글자에 밑줄, 취소선, 윗줄 등 부여
+    - uderline , line-through, overline 등....
+
+*/
+.tb1{
+    /* text-decoration: underline; 밑줄 */
+    /* text-decoration: line-through; 취소선 */
+    text-decoration: overline;
+}
+
+/* 글자에 그림자 효과
+    text-shadow: 가로, 세로, 번짐영역, 컬러
+*/
+.ts1{
+    text-shadow: 2px 2px 2px black;
+}
+
+/* 
+    글자 정렬 기능
+
+*/
+.ta1-left{
+    text-align: left;
+    /* text-align: start; 와 동일 기능 */
+}
+
+.ta1-center{
+    text-align: center;
+}
+
+.ta1-right{
+    text-align: right;
+     /* text-align: end; 와 동일 기능 */
+}
+
+.ta1-justify{
+    text-align: justify;
+     /* 글자를 균등하게 정렬 */
+}
+
+
+/* 문장(위아래) 내 글자간 줄 간격 조절 */
+.lh1{
+    line-height: 200px;
+}
+
+/* 글자 간격 조정 스타일*/
+.ls1{
+    letter-spacing: 30px;
+}
+
+/* 단어 간격 조정 스타일 */
+.ws1{
+    word-spacing: 30px;
+}
+
+/* 
+    공백 처리와 관련된 기능 제공 스타일 
+    div class="ws2" 간격 너비 정해서 보면 normal은 줄바꿈 제공, nowrap은 줄바꿈 미제공
+*/
+.ws2 {
+    width: 300px
+}
+
+.ws2 > .normal{
+    white-space: normal;
+}
+
+.ws2 > .nowrap{
+    white-space: nowrap;
+}
+
+.ws2 > .pre{
+    white-space: pre;
+}
+
+.ws2 > .pre-line{
+    white-space: pre-line;
+}
+
+.ws2 > .pre-wrap{
+    white-space: pre-wrap;
+}
+
+.to1{
+    width: 250px;
+}
+
+.to1 > .clip{
+    white-space: nowrap;
+    overflow: hidden; /* clip 과 hidden 같이 사용하여 지정된 영역 벗어난 부분을 숨김 처리함 */
+    text-overflow: clip; /* 지정된 영역을 벗어난 부분을 clip */
+}
+
+.to1 > .ellipsis{
+    white-space: nowrap;
+    overflow: hidden; /* ellipsis 와 hidden 같이 사용하여 지정된 영역 벗어난 부분을 말줄임표로 숨김. */
+    text-overflow: ellipsis; /* 지정된 영역을 벗어난 부분을 ellipsis(말줄임표) */
+}

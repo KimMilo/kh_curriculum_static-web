@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="/static/js/sample01.js"></script>
+    <style type="text/css">
+        div { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <div id="print_area">
+
+    </div>
+    <div>
+        <!-- onclick 버튼을 클릭할 때 fn1(); 함수를 동작하게 함. -->
+        <button type="button" onclick="fn1();">fn1() 함수 실행</button>
+    </div>
+    <div>
+        <!-- 매개변수를 모두 작성하지 않으면 작성하지 않은 매개변수 값은 undefined이기 때문에
+             결과값은 NaN이 나옴. 
+             함수에 undefined를 if문으로 값을 넣으면 활용됨. -->
+        <button type="button" onclick="fn2(10, 20);">fn2(10, 20) 함수 실행</button>
+        <button type="button" onclick="fn2(10);">fn2(10) 함수 실행</button>
+    </div>
+    <div>
+        <!-- script 함수 fn3 매개변수에 기본값이 있기 때문에 매개변수 넣지 않을 경우 기본값으로 실행됨. -->
+        <button type="button" onclick="fn3();">fn3() 함수 실행</button>
+        <button type="button" onclick="fn3(10,20);">fn3(10, 20) 함수 실행</button>
+    </div>
+    <div>
+        <button type="button" onclick="fn4();">fn4() 가변변수 함수 실행</button>
+        <button type="button" onclick="fn4(10);">fn4(10) 가변변수 함수 실행</button>
+        <button type="button" onclick="fn4(10, 20);">fn4(10, 20) 가변변수 함수 실행</button>
+        <button type="button" onclick="fn4(10, 20, 30);">fn4(10, 20, 30) 가변변수 함수 실행</button>
+    </div>
+    <div>
+        <button type="button" onclick="fn5();">fn5() 익명 함수 실행</button>
+
+        <!-- 익명함수를 onclick에 바로 적용할 수도 있음. -->
+        <button type="button" 
+        onclick="(function(){document.getElementById('print_area').innerText = '익명함수가 실행되었습니다.'})();">
+        fn5() 익명 함수 실행</button>
+    </div>
+    <div>
+        <button type="button" onclick="fn6(10, 20);">fn6(10, 20) 익명 함수 실행</button>
+    </div>
+    <div>
+        <button type="button" onclick="fn7();">fn7() 화살표 익명 함수 실행</button>
+    </div>
+     <script type="text/javascript">
+        console.log("Run Javascript!");
+    </script>
+</body>
+</html>

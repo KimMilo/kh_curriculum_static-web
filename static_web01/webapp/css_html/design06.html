@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 폼 디자인(NAVER)</title>
+   <!-- 아이콘 넣기 방법 1 --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link type="text/css" rel="stylesheet" href="/static/css/design06.css">
+</head>
+<body>
+    <div class="container-center">
+        <header>
+            <div class="logo-title">
+                <h1 class="logo">NAVER</h1>
+            </div>
+        </header>
+        <section>
+            <div class="input-form-group">
+                <div class="input-group">
+                    <label for="">아이디</label>
+                    <div class="input-icon">
+                        <div class="input-form">
+                            <input type="text">
+                        </div>
+                        <span>@naver.com</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">비밀번호</label>
+                    <div class="input-icon">
+                        <div class="input-form">
+                            <input type="passowrd">
+                        </div>
+                        <!-- - 아이콘 사이트 https://fonts.google.com/icons 에서 아이콘 찾으면 됨.
+                             - 아이콘 사용 방법
+                                1. 해당 아이콘 클릭 하면 우측에 링크 복사해서 head에 집어 넣고
+                                   사용할 곳에 class와 icon명을 기재하면 됨.
+                                    예)
+                                    <span class="material-symbols-outlined">icon</span>
+                                    이 경우에는 가져온 css링크와 class명 맞춰야함.
+
+                                2. 링크에서 http:// 에 해당하는 링크를 복사해서 브라우저에 복사한 뒤
+                                   나오는 소스코드를 전체 복사하여 사용하고 있는 css에 붙복 하면 됨.
+                                   이 경우에는 class 명과 css 붙복 한 .material-symbols-outlined 명을
+                                   똑같이 맞춰주기만 하면 이름 변경 가능.
+                              -->
+
+                        <!-- span class="material-symbols-outlined">lock</span -->
+                        <span class="icon1">lock</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">비밀번호 재확인</label>
+                    <div class="input-icon">
+                        <div class="input-form">
+                            <input type="password">
+                        </div>
+                        <span class="icon2">lock</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-form-group">
+                <div class="input-group">
+                    <label for="">이름</label>
+                    <div class="input-form">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">생년월일</label>
+                    <div class="input-inline">
+                        <input type="text" placeholder="년(4자)">
+                        <select>
+                            <!-- 맨 위가 첫 선택일 경우 굳이 selected 안해도 됨. -->
+                            <option>월</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <input type="text" placeholder="일">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">성별</label>
+                    <div class="input-form">
+                        <select>
+                            <option>성별</option>
+                            <option>남자</option>
+                            <option>여자</option>
+                            <option>선택 안함</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">본인 확인 이메일(선택)</label>
+                    <div class="input-form">
+                        <input type="text" placeholder="선택입력">
+                    </div>
+                </div>
+            </div>
+            <div class="input-form-group">
+                <div class="input-group">
+                    <label for="">휴대전화</label>
+                    <div class="input-form">
+                        <select>
+                            <option>니카리과 + 505</option>
+                            <option selected>대한민국 +82</option>
+                            <option>덴마크 +45</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-inline">
+                        <input class="inline-w2" type="text" placeholder="전화번호 입력">
+                        <button class="btn-green" type="button">인증번호 받기</button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-form disabled">
+                        <input type="text" placeholder="인증번호 입력하세요." disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="button-form">
+                <button class="btn-green" type="button">가입하기</button>
+            </div>
+        </section>
+        <footer>
+            <div class="policy-link">
+                <a href="#">이용약관</a> |
+                <a href="#"><strong>개인정보처리방침</strong></a> |
+                <a href="#">책임의 한계와 법적고지</a> |
+                <a href="#">회원정보 고객센터</a>
+            </div>
+            <div class="corp">
+                <a href="#">© NAVER Corp.</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

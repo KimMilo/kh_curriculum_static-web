@@ -1,0 +1,189 @@
+/* @ 전체 선택자 */
+*{
+    color:gray;
+}
+
+/* @ 태그 선택자 */
+
+
+h1{
+    border-style: solid; /* border-style 테두리 스타일 */
+    border-width: 2px; /* border-width 테두리 두께 */
+}
+
+h2{
+    border-style: solid; /* border-style 테두리 스타일 */
+    border-width: 2px; /* border-width 테두리 두께 */
+}
+
+h3{
+    border-style: solid; /* border-style 테두리 스타일 */
+    border-width: 2px; /* border-width 테두리 두께 */
+}
+
+h4, h5, h6{
+    border-style: solid; /* border-style 테두리 스타일 */
+    border-width: 2px; /* border-width 테두리 두께 */
+}
+
+/* @ 아이디 선택자 */
+#main-title{
+    font-size: 48px;
+    background-color: gray;
+}
+
+/* @ 클래스 선택자 */
+
+.bg-black{
+    background-color:black;
+    color:white;
+}
+/* 아이디 선택자가 클래스 선택자보다 우선순위임. */
+
+
+
+/* @ 속성 선택자 */
+
+[type=text]{
+    background-color: beige;
+}
+[readonly]{
+    background-color:blue;
+    color:white;
+}
+/* 나중에 지정한게 우선순위 */
+
+
+[type=password]{
+    background-color:orange;
+}
+[type=number]{
+    background-color: yellow;
+}
+[name]{
+    background-color: green;
+}
+
+
+[id="main-title"]{
+    background-color: bisque;
+}
+
+
+[class="bg-black"]{
+    color: black;
+}
+
+
+/* @ 자식 선택자 */
+.parent1 > li{
+    /* font-weight: bold; 
+       자식인 li 내부에 텍스트가 있어서 bold 적용되었으나 자식 선택자로서 적용된게 아님 */
+    color:blue;
+}
+
+/* @ 자손 선택자 */
+.parent2 li{
+    color:red;
+}
+
+/* @ 형제 선택자 */
+.sibling1 + li{
+    color: brown;
+}
+
+.sibling2 ~ li{
+    color: cornflowerblue;
+}
+
+/* @ 의사클래스 선택자 
+    - :active : 마우스로 클릭한채로 누르고 있으면 행동 (다른거랑 중복 실행 안됨.)
+    - :hover : 마우스를 올려만 두어도 행동
+    - :focus : 입력 양식에서 활성화 되면 행동 
+    - ::selection : 드래그로 영역 잡으면 행동
+    - :visited : 한 번이라도 방문 이력이 있는 주소면 행동
+    - :link : 한 번도 방문 이력이 없는 주소면 행동
+    - :checked : 체크박스의 체크를 클릭하면 행동
+    - tag:first-child : 해당 Tag 아래 첫 번째 Tag만 적용
+    - tag:last-child : 해당 Tag 아래 마지막 Tag만 적용
+    - tag:nth-child(*) : 해당 Tag 아래 *번째 Tag만 적용
+    - tag:nth-child(*n) : 해당 Tag 아래 *의 배수 Tag에 적용
+    - :first-child : (Tag 타입별이 아닌) 그냥 첫 번째 Tag만 적용
+    - :last-child : (Tag 타입별이 아닌) 그냥 마지막 Tag만 적용
+    - :nth-child(*) : *번째 Tag만 적용
+    - :nth-child(*n) : *의 배수 Tag에 적용
+    - :first-of-type : Tag 타입별로 첫번째 Tag만 적용
+    - :last-of-type : Tag 타입별로 마지막 Tag만 적용
+    - :nth-of-type(*) : Tag 타입별로 각각 *번째 Tag만 적용
+    - :nth-of-type(*n) : Tag 타입별로 각각 *의 n의 배수번째 Tag에 적용
+*/
+.pesudo :active{
+    background-color: red;
+}
+
+.pesudo :hover{
+    background-color: blue;
+}
+
+.pesudo :focus{
+    background-color: green;
+}
+
+.pesudo ::selection{
+    background-color: aqua;
+}
+
+.pesudo :visited{
+    color:red;
+}
+
+.pesudo :link{
+    color:skyblue;
+}
+
+.pesudo :checked{
+    box-shadow: 0 0 1px 2px black; /* box-shadow 체크박스 겉 테두리 */
+}
+
+.pesudo2 li:first-child{
+    background-color: azure;
+    /* pesudo2 클래스 li 태그에서 첫번째 자식(Tag)을 선택한다는 의미 */
+}
+
+.pesudo2 li:last-child{
+    background-color: deepskyblue;
+    /* pesudo2 클래스 li 태그에서 마지막 태그를 선택한다는 의미 */
+}
+
+.pesudo2 li:nth-child(2){
+    background-color: coral;
+    /* pesudo2 클래스 li 태그에서 2번째 태그를 선택한다는 의미 */
+}
+
+.pesudo2 li:nth-child(2n){
+    background-color: beige;
+    /* pesudo2 클래스 li 태그에서 2의 배수 태그를 선택한다는 의미 */
+}
+
+.pesudo3 :first-child{
+    color: green;
+}
+
+.pesudo3 :first-of-type{
+    color:red;
+}
+/* first-child / first-of-type 후순위가 적용 */
+
+
+
+.pesudo3 :last-of-type{
+    color:blue;
+}
+
+.pesudo3 :nth-of-type(2){
+    color:blueviolet;
+}
+
+.pesudo3 :nth-of-type(3n){
+    color:crimson;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>하이퍼링크 태그</title>
+</head>
+<body>
+    <!--
+        다른 사이트 또는 페이지 및 영역으로 화면을 전환(이동) 시키기 위해 사용하는 태그
+        ancher(앵커) 태그(a태그)이나 하이퍼링크 태그라고 많이 부른다.(인라인태그)
+        마우스 올려 놓으면, 하단에 사이트 정보 나옴.
+    -->
+    <h2 id="title1">외부 사이트로 이동</h2>
+    <a href="https://naver.com">외부 사이트로 이동</a><br>
+    <br>
+
+    <h2 id="title2">내부 페이지로 이동 - 절대경로</h2>
+    <a href="/tags/paragraph.html">내부 페이지(글자관련 태그)로 이동(/ 절대경로)</a><br>
+    <br>
+
+     <!-- 현재위치 : : http://172.30.144.1:5500/tags/hyperlink.html -->
+    <h2 id="title3">내부 페이지로 이동 - 상대경로(현재위치)</h2>
+    <a href="./list.html">내부 페이지(목록관련 태그)로 이동(./ 상대경로-현재위치)</a><br>
+    <br>
+
+    <h2 id="title4">내부 페이지로 이동 - 상대경로(상위폴더)</h2>
+    <a href="../index.html">내부 페이지(메인페이지-index)로 이동(../ 상대경로-상위폴더)</a><br>
+    <br>
+
+    <h2 id="title5">동일 페이지의 다른 영역으로 이동</h2>
+    <a href="#title1">"외부사이트로 이동<!-- title1 -->" 위치로 이동합니다.</a><br>
+    <a href="#title2">"내부사이트로 이동<!-- title2 --> - 절대경로" 위치로 이동합니다.</a><br>
+    <br>
+
+    <h2>링크 클릭할 때 새로운 탭에서 이동하기</h2>
+    <a href="https://naver.com" target="_blank">새로운 탭에서 네이버로 이동</a><br>
+    <br>
+
+    <h2>링크 클릭할 때 페이지 이동이 아닌 파일 다운로드 받기</h2>
+    <a href="../index.html" download>index.html 다운로드</a><br>
+    <a href="../index.html" type="text/html" download>type="text/html" 지정하여 다운로드</a><br>
+    <a href="../index.html" type="text/html" download="이름바꾸기.html">이름바꾸기.html 제목으로 다운로드</a>
+</body>
+</html>

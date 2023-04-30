@@ -1,0 +1,132 @@
+/* div 영역에 배경색 설정 */
+.background-color{
+    background-color: cornflowerblue;
+    width: 250px; /* 너비(가로) */
+    height: 200px; /* 높이(세로) */
+}
+
+/* 
+    # box model
+    - content : 글자영역
+    - padding : content 영역을 둘러싼 내부여백 영역
+    - border : padding 영역을 둘러싼 테두리 영역
+    - margin : border 영역을 둘러싼 외부여백 영역
+
+    background-clip: border-box; border 영역까지 색상표시
+    background-clip: padding-box; padding 영역까지 색상표시
+    background-clip: content-box; content 영역까지 색상표시
+    background-clip: margin-box; magin 영역까지 색상표시
+
+    padding: 25px; 25px크기의 내부여백 영역표시
+    border-style: solid; 테두리 실선표시
+    border-color: 테두리 색상
+    border-width: 테두리 두께
+*/
+
+.clip-border{
+    background-clip: border-box;
+    padding: 25px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 5px;
+}
+
+.clip-padding{
+    background-clip: padding-box;
+    padding: 25px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 5px;
+}
+
+.clip-content{
+    background-clip: content-box;
+    padding: 25px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 5px;
+}
+
+/* 
+    배경 이미지 
+    기본값은 x,y 모두 repeat임.
+*/
+.background-image{
+    background-image: url('/static/img/googlelogo_color_272x92dp.png');
+    /* '' / "" 상관없는데 강사님 하는거 보면 이미지 삽입할 때 '' 를 쓰는 것 같음 */
+    width: 250px;
+    height: 200px;
+}
+
+/* 배경 이미지 반복 없음 */
+.repeat-no{
+    background-repeat: no-repeat;
+}
+
+/* 배경 이미지 X축만 반복 */
+.repeat-x{
+    background-repeat: repeat-x;
+}
+
+/* 배경 이미지 Y축만 반복 */
+.repeat-y{
+    background-repeat: repeat-y;
+}
+
+/* 배경 이미지 contain : 이미지 폭을 짤리거나 찌그러지지 않는 한도에서 제일 크게 자동으로 크기 조정함.
+                        다만, 이미지가 원본 그대로 살아 있으며, 따로 설정없으면(repeat) 이미지 반복됨. */
+.bg-size-contain{
+    background-size: contain;
+}
+
+/* 배경 이미지 cover : 이미지가 다 들어가는지 여부를 떠나서 크기에 꽉차게 조정함.
+                      이미지를 잘라서 빈 공간이 생기지 않도록 한다.*/
+.bg-size-cover{
+    background-size: cover;
+}
+
+/* 배경 이미지 auto : 기본값 */
+.bg-size-auto{
+    background-size: auto;
+}
+
+/* 배경 이미지 background-size: 가로 세로 로 직접 지정*/
+.bg-size-self{
+    background-size: 250px 200px;
+}
+
+/* 
+    배경 이미지 
+    background-position: top; 위에 위치
+    background-position: center; 가운데 위치
+    background-position: bottom; 아래에 위치
+    background-position: right; 가운데 오른쪽에 위치
+    background-position: left; 가운데 왼쪽에 위치
+
+    위아래 왼쪽 오른쪽 같이 지정 (위아래 왼쪽 오른쪽 순서는 상관 없음.)
+    background-position: top left; or left top; 왼쪽 위에 위치
+    background-position: left bottom; 왼쪽 아래에 위치
+    background-position: bottom right; 오른쪽 아래에 위치
+
+    직접 위치 지정
+    background-position: 25px 50px; 가로 25px 세로 50px에 위치
+*/
+.background-position{
+    width: 250px;
+    height: 200px;
+    background-image: url('https://google.com/favicon.ico');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/* background-attachment : 배경 이미지의 스크롤 여부를 정하는 스타일 속성 */
+body{
+    background-image: url('https://naver.com/favicon.ico?1');
+    background-repeat: repeat-x;
+
+}
+.background-attachment{
+    background-attachment: scroll; /* body img인 네이버 icon이 scroll 하면 고정 없이(안보임) 스크롤 됨. */
+    background-attachment: fixed; /* body img인 네이버 icon이 scroll 하면 고정되어(보임) 스크롤 됨. */
+}
+

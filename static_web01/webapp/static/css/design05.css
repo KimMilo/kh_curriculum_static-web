@@ -1,0 +1,113 @@
+.form-name{
+    width: 360px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    text-align: center;
+}
+.kakao-login-form{
+    width: 360px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+.input-form-group{
+    margin-top: 2em;
+}
+.input-form-group .input-form{
+    width: 100%;
+    margin-bottom: 0.4em;
+}
+.input-form-group .input-form .text-input{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1.6px;
+    border-bottom-color: rgb(224, 224, 224);
+    outline-style: none;
+    padding: 0.5em;
+}
+.input-form-group .input-form .text-input:focus{
+    border-bottom-color: rgb(65, 65, 65);
+}
+.input-form-group .input-form .text-input + .input-tip{
+    font-size: 0.4em;
+    display: none;
+}
+.input-form-group .input-form .text-input:focus + .input-tip{
+    display: inline-block;
+}
+.input-form-group .input-form .text-input:focus + .input-tip span{
+    color: red;
+    font-weight: bold;
+ }
+ .input-form-group .input-form .check-input + label{
+    font-size: 0.8em;
+    color: rgb(63, 63, 63);
+ }
+ .button-group{
+    margin-top: 1.5em;
+ }
+ .button-group .btn-block{
+    width: 100%;
+    border-style: none;
+    padding: 0.6em;
+    border-radius: 5px;
+ }
+ .btn-yellow{
+    background-color: rgb(254, 229, 0);
+    /* 참고로 색상 확인 방법은 스샷 찍어서 그림판에 "색선택" 클릭 및 해당 색상 찍어보고 색 편집 들어가보면 됨 */
+ }
+ .btn-gray{
+    background-color: rgb(240, 240, 240);
+ }
+.button-group .separator{
+    font-size: 0.5em;
+    color: rgb(126, 126, 126);
+}
+.button-group .separator span{
+    display: inline-block;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+.button-group .separator span::before{
+    content: "";
+    height: 1px;
+    display: inline-block;
+    width: 164px;
+    background-color: rgb(224, 224, 224);
+    background-clip: content-box;
+    padding-right: 6px;
+    position: relative;
+    top: -3px;
+}
+.button-group .separator span::after{
+    content: "";
+    height: 1px;
+    display: inline-block;
+    width: 164px;
+    background-color: rgb(224, 224, 224);
+    background-clip: content-box;
+    padding-left: 6px;
+    position: relative;
+    top: -3px;
+}
+.login-foot{
+    height: 1em; /* float을 하다보면 영역을 벗어날 수 있어서 조정함 */
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 0.6em; /* 글자크기는 부모 클래스 바뀌면 자식 이 후도 반영됨 */
+}
+.login-foot .left{
+    float: left;
+}
+.login-foot .right{
+    float: right;
+}
+.login-foot .foot-link{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}

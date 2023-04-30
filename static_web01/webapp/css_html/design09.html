@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BS : 카페 페이지 디자인-NAVER(카페명 : HIFINARA)</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/design09.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-md">
+        <header>
+            <nav class="navbar navbar-expand-md bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://static.nid.naver.com/images/web/user/tit_logo.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#topNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="topNav">
+                        <ul class="navbar-nav ms-auto">
+                            <!-- m : margin
+                                 p : padding
+
+                                 s : start(left)
+                                 e : end(right)
+                                 t : top
+                                 b : bottom
+                                 x : left, right
+                                 y : top, bottom -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">메뉴1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="vr align-middle"></div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">메뉴2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="vr align-middle"></div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown">
+                                    드랍다운
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                    <li>
+                                        <a class="dropdown-item" href="#">드랍메뉴1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">드랍메뉴2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="vr align-middle"></div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">메뉴4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="vr align-middle"></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <button class="btn btn-sm btn-outline-secondary" type="button">로그인</button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="icon align-middle">apps</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-center mt-3">
+                <div id="sliderImg" class="carousel slide carousel-dark" 
+                            data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="/static/img/HIFINARA.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="/static/img/HIFINARA.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="/static/img/HIFINARA.png" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                                data-bs-target="#sliderImg" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                                 data-bs-target="#sliderImg" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-4 ms-auto">
+                    <div class="input-group">
+                        <input class="form-control" type="text">
+                        <button class="btn btn-outline-success" type="button">검색</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="row mt-3">
+            <div class="col-4">
+                <div class="list-group list-group-flush border-top border-bottom border-2 border-danger"> <!-- border-1 ~ -5까지 커질수록 두꺼워짐 -->
+                    <!-- justify-content-start(between, end)
+                        d-flex랑 같이 사용되며 start는 왼쪽에 end는 오른쪽에 between 은 양쪽에 정렬
+
+                        list-group-item-action hover 기능임.
+                    -->
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                            메뉴명A
+                        <span class="badge bg-primary tounded-pill">N</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명B
+                        <span class="badge bg-primary tounded-pill">N</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명C
+                    </a>
+                </div>
+                <div class="list-group list-group-flush border-top border-bottom border-2 border-danger">
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명D
+                        <span class="badge bg-primary tounded-pill">N</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명E
+                        <span class="badge bg-primary tounded-pill">N</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명F
+                    </a>
+                </div>
+                <div class="list-group list-group-flush border-top border-bottom border-2 border-danger">
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명G
+                        <span class="badge bg-primary tounded-pill">N</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명H
+                        <span class="badge bg-primary tounded-pill">N</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+                        메뉴명I
+                    </a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="vstack mb-3">
+                    <div class="border-bottom border-2 border-danger pb-2 d-flex justify-content-between">
+                        <span class="fs-5 fw-bold text-danger">주제 분류 1</span>
+                        <a class="link-secondary text-decoration-none" href="#"><small>더보기 &gt;</small></a>
+                        <!-- nav-link에서는 자동으로 밑줄도 제거해주고 색상도 bg랑 맞춰주지만 a테그에서는 적용이 안되기 때문에
+                             text-decoration-none 넣어줌. -->
+                    </div>
+                </div>
+                <!-- sm, md, lg, xl, xxl, fluid 창의 크기를 의미함 : breakpoints라고 부름-->
+
+                <!-- row-cols-sm-3 sm 사이즈 보다 크거나 같으면 3개, 
+                     row-cols-md-2 md 사이즈 보다 크거나 같으면 2개,
+                     row-cols-lg-1 lg 사이즈 보다 크거나 같으면 1개,
+                     row-cols-3 : 모두(그 외) 3개씩
+                     g-2 : 여백주기 ( 0부터 5까지 있음. )
+                <div class="row row-cols-3 row-cols-sm-3 row-cols-md-2 row-cols-lg-1 g-2" -->
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-2">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/img/HIFINARA_main.png" alt="">
+                            <div class="card-body">
+                                <p class="card-title text-truncate">제목 입니다. 글이 길어지면 잘립니다.</p>
+                                <p class="card-text">작성자</p>
+                                <p class="card-text text-muted"><small>작성일자 | 조회수</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/img/HIFINARA_main.png" alt="">
+                            <div class="card-body">
+                                <p class="card-title text-truncate">제목 입니다. 글이 길어지면 잘립니다.</p>
+                                <p class="card-text">작성자</p>
+                                <p class="card-text text-muted"><small>작성일자 | 조회수</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/img/HIFINARA_main.png" alt="">
+                            <div class="card-body">
+                                <p class="card-title text-truncate">제목 입니다. 글이 길어지면 잘립니다.</p>
+                                <p class="card-text">작성자</p>
+                                <p class="card-text text-muted"><small>작성일자 | 조회수</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/img/HIFINARA_main.png" alt="">
+                            <div class="card-body">
+                                <p class="card-title text-truncate">제목 입니다. 글이 길어지면 잘립니다.</p>
+                                <p class="card-text">작성자</p>
+                                <p class="card-text text-muted"><small>작성일자 | 조회수</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/img/HIFINARA_main.png" alt="">
+                            <div class="card-body">
+                                <p class="card-title text-truncate">제목 입니다. 글이 길어지면 잘립니다.</p>
+                                <p class="card-text">작성자</p>
+                                <p class="card-text text-muted"><small>작성일자 | 조회수</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/img/HIFINARA_main.png" alt="">
+                            <div class="card-body">
+                                <p class="card-title text-truncate">제목 입니다. 글이 길어지면 잘립니다.</p>
+                                <p class="card-text">작성자</p>
+                                <p class="card-text text-muted"><small>작성일자 | 조회수</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 mt-3">
+                    <div class="col-6">
+                        <div class="vstack mb-3">
+                            <div class="border-bottom border-2 border-danger pb-2 d-flex justify-content-between">
+                                <span class="fs-5 fw-bold text-danger">주제 분류 2</span>
+                                <a class="link-secondary text-decoration-none" href="#"><small>더보기 &gt;</small></a>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="vstack mb-3">
+                            <div class="border-bottom border-2 border-danger pb-2 d-flex justify-content-between">
+                                <span class="fs-5 fw-bold text-danger">주제 분류 3</span>
+                                <a class="link-secondary text-decoration-none" href="#"><small>더보기 &gt;</small></a>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border border-0 border-bottom border-secondary rounded-0">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-truncate fw-bold">제목 입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text text-truncate">게시글의 본문 내용입니다. 길어지면 글자가 잘립니다.</p>
+                                        <p class="card-text">
+                                            작성자<br>
+                                            <span class="text-muted"><small>작성일 | 조회수</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="/static/img/HIFINARA_main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="mt-5 border-top border-2 border-dark">
+                <div class="row mt-3 mb-5 d-flex justify-content-between">
+                    <!-- col-auto 하면 들어간 내용만큼을 등분하고 col은 들어간 내용무관 전체에서 등분-->
+                    <div class="col-auto">
+                        <span>회사명</span>
+                        <div class="vr"></div>
+                        <a class="text-secondary text-decoration-none" href="#">사이트 주소</a>
+                    </div> 
+                    <div class="col-auto">
+                        <span>회사 로고</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

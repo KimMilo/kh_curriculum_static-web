@@ -1,0 +1,84 @@
+
+/*  
+    # float-right/left
+
+    float: left 왼쪽 배치
+    float: right 오른쪽 배치
+
+    이 때, float이 없는 영역이 있는 경우에는 적용이 되고, 
+    같은 float가 예를 들어 왼쪽 배치되어 있으면 그 다음 왼쪽(옆)으로 붙음.
+    float가 적용되면 block 영역에서도 개행 되지 않고 영역이 배치됨.
+
+    (추가적으로, 부트스트랩(라이브러리)사용할 때 float은
+    아래의 div 영역에도 영향을 줄 수 있어 꼭 쓴 부분의 부모태그에 clearfix 를 해줘야 한다고는 함.
+     -> 그래서 clear 가 필요없는 
+     div를 왼쪽 정렬, 혹은 오른쪽 정렬은 d-flex justify-content-start/end로 사용한다고 함.)
+*/
+
+
+/*  block 영역에서 사용 */
+
+.float1 > div{
+    width: 100px;
+    height: 100px;
+}
+
+.float1 > .left{
+    float: left;
+}
+
+.float1 > .right{
+    float: right;
+}
+
+/*  inline 영역에서 사용 */
+
+.float2 > div{
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+.float2 > .left{
+    float: left;
+}
+
+.float2 > .right{
+    float: right;
+}
+
+/* z-index 
+        - z 축을 기준으로 배치
+        - z-index: 숫자; 숫자 기준으로 배치됨.(작은 숫자부터 배치되어, 큰 숫자가 앞으로 배치)
+*/
+
+.zindex{
+    position: relative;
+}
+
+.zindex > .z1{
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    position: absolute;
+    left: 0px; top: 0px;
+    background-color: cadetblue;
+}
+
+.zindex > .z2{
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    position: absolute;
+    left: 30px; top: 30px;
+    background-color: rgb(77,230,236);
+}
+
+.zindex > .z3{
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    position: absolute;
+    left: 60px; top: 60px;
+    background-color: rgb(9,243,251);
+}
