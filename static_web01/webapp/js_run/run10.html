@@ -1,71 +1,17 @@
-<!--
-    jQuery : 자바스크립트 라이브러리 중 하나로 DOM 객체를 더 편하고 간략하게 다룰 수 있도록 기능을 지원해준다.
-             jQuery 를 이용해  AJAX와 관련된 기능으로 사용
-                - AJAX 란 서버와 통신을 진행할 때 사용하는 기능을 제공해줌.
-
-        - 구글에서 jquery 검색 후 간단하게 사용하려면 cdn 클릭
-        - jQuery core 최신버전 uncompressed 클릭 후 주소 복사하여 head에 붙여놓고 사용하면 됨.
-        - 적용이 되었는지 확인하려면 콘솔창에 $; 치면 실행문 나오면 제대로 동작하는 것임.
-            (제대로 동작하지 않으면 f $() { [native code] } 출력됨.)
--->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <!-- jQuery 사용 시 jQuery 먼저 입력 후 js파일 넣어야 제대로 동작함. -->
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/static/js/sample10.js"></script>
+    <script src="/static/js/sample10.js"></script>
 </head>
 <body>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>번호</th>
-                <th>제목</th>
-                <th>작성자</th>
-                <th>작성일</th>
-                <th>조회수</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>제목 입니다.</td>
-                <td>tester</td>
-                <td>2022-12-28</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>테스트 중 입니다.</td>
-                <td>admin</td>
-                <td>2022-12-28</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-            </tr>
-        </tfoot>
-    </table>
-    <div>
-        <input type="text">
-    </div>
-
-    <hr>
-
     <h2>즐겨찾기 링크 모음</h2>
     <form>
         <input type="text" name="url" placeholder="링크주소를 입력하세요." required>
         <input type="text" name="name" placeholder="이름을 입력하세요." required>
-        <!-- button type="button" name="btn" onclick="addBookmark(this.form);">등록</button -->
-        <button type="button" name="btn" on="false">등록</button>
+        <button type="button" on="false">등록</button>
     </form>
     <ul class="bookmark-list">
         <li><a href="https://naver.com">네이버</a></li>

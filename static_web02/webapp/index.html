@@ -5,188 +5,203 @@
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- 부트스트랩 CDN 은 반드시 인터넷이 연결되어 있어야 함.
-         
-        <다운로드 하여 사용하는 방법> 
-         부트스트랩 메인 페이지에서 다운로드 클릭 -> Compiled CSS and JS  download 후 압축 풀면
-         -> 폴더 내부에 css 및 js 폴더가 있으며 이를 static 폴더에 bs5 폴더 만들어서 css 및 js 폴더 끌어와서
-         넣어두면 인터넷 없이도 부트스트랩이 사용 가능해짐. -->
-    
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/static/js/temp.js"></script>
+    <script type="text/javascript" src="./static/js/temp.js"></script>
 </head>
 <body>
-    <header class="mb-3">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand col-2 me-4" href="#">로고</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top_menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="top_menu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item me-5">
-                            <a class="nav-link active" href="#">메뉴 1</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#">메뉴 2</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#">메뉴 3</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#">메뉴 4</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">개인설정</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" style="left: -4em; z-index: 9999;">
-                                <li><a class="dropdown-item" href="#">설정 메뉴 1</a></li>
-                                <li><a class="dropdown-item" href="#">설정 메뉴 2</a></li>
-                                <li><a class="dropdown-item" href="#">설정 메뉴 3</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="./myinfo/">정보 수정</a></li>
-                                <!-- 참고로 html의 이름이 index일 경우(index.html) 파일명 없이 사용 가능(기본 디폴트가 index를 찾기 때문에)-->
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="m-3">
-        <div class="row g-1">
-            <aside class="pt-3 col-2 sticky-top overflow-auto" style="height: 300px;">
-                <!-- sticky-top 과 높이(해당 구역영역 얼마나 보여지게 할건지 높이설정) 설정하면 메인 스크롤이 내려갈 때 구역영역도 같이 따라 내려갈 수 있게 설정 
-                     overflow-auto 구역영역에 스크롤을 만들어줌. -->
-                <h6 class="mb-3 pb-1 border-bottom border-2 border-dark">구역 1</h6>
-                <div class="list-group list-group-flush mb-3">
-                    <a class="list-group-item list-group-item-action active" href="#">분류 1</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 2</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 3</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 4</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 5</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 6</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 7</a>
-                </div>
-            </aside>
-            <section class="col-8">
-                <h4 class="mt-4 ms-4">분류 1</h4>
-                <div class="mx-4">
-                    <div class="row mb-3">
-                        <form style="width: 24em;">
-                            <div class="row g-0">
-                                <input class="col me-2 form-control" type="text" placeholder="검색어">
-                                <button class="col-auto btn btn-outline-secondary" type="button">검색</button>
-                            </div>
-                        </form>
-                        <div class="ms-auto col-auto">
-                            <select class="form-select">
-                                <option value="5">5 개</option>
-                                <option value="10" selected>10 개</option>
-                                <option value="15">15 개</option>
-                                <option value="20">20 개</option>
-                                <option value="25">25 개</option>
-                                <option value="30">30 개</option>
-                            </select>
-                        </div>
-                    </div>
-                    <table class="table table-hover">
-                        <colgroup>
-                            <col class="col-1">
-                            <col class="col-auto">
-                            <col class="col-2">
-                            <col class="col-2">
-                            <col class="col-1">
-                        </colgroup>
-                        <thead class="text-center">
-                            <tr>
-                                <th>컬럼 1</th>
-                                <th>컬럼 2</th>
-                                <th>컬럼 3</th>
-                                <th>컬럼 4</th>
-                                <th>컬럼 5</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                            <tr>
-                                <td>값</td><td>값</td><td>값</td>
-                                <td>값</td><td>값</td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <div class="container-fluid my-3">
+        <header>
+            <nav class="navbar navbar-expand-fluid navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://static.nid.naver.com/images/web/user/tit_logo.png">
+                    </a>
                     <div>
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <li class="page-item"><a class="page-link" href="#">7</a></li>
-                            <li class="page-item"><a class="page-link" href="#">8</a></li>
-                            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+                        <ul class="navbar-nav" style="display: inline-block;">
+                            <li class="nav-item mx-5" style="display: inline-block;">
+                                <a a class="nav-link text-light" href="#">메뉴1</a>
+                            </li>
+                            <li class="nav-item me-5" style="display: inline-block;">
+                                <a a class="nav-link text-light" href="#">메뉴2</a>
+                            </li>
+                            <li class="nav-item me-5" style="display: inline-block;">
+                                <a a class="nav-link text-light" href="#">메뉴3</a>
+                            </li>
+                            <li class="nav-item me-5" style="display: inline-block;">
+                                <a a class="nav-link text-light" href="#">메뉴4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span style="font-size: 15px; color: white;">개인설정 ▼</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" style="float: right;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="font-size: 14px; color: orange;">가입정보 확인</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./myinfo/" style="font-size: 14px; color: orange;">개인정보 수정</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="font-size: 14px; color: orange;">회원탈퇴</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </section>
-            <aside class="pt-3 col-2 sticky-top overflow-auto" style="height: 68vh;">
-                <h6 class="mb-3 pb-1 border-bottom border-2 border-dark">구역 2</h6>
-                <div class="list-group list-group-flush mb-3">
-                    <a class="list-group-item list-group-item-action" href="#">분류 A</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 B</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 C</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 D</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 E</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 F</a>
-                    <a class="list-group-item list-group-item-action" href="#">분류 G</a>
+            </nav>
+        </header>
+        <section>
+            <ul class="list-group mt-3 col-2 container-fluid" name="ul1" style="float: left;">
+                <li class="list-group-item">
+                    <a class="nav-link mb-3" href="#" style="font-weight: bold; font-size: 20px;">구역 1</a>
+                </li>
+                <li class="list-group-item list-group-item-action" style="border-top-width: 2px; border-top-color: black;">
+                    <a class="nav-link mb-3" href="#">분류 1</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 2</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 3</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 4</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 5</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 6</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 7</a>
+                </li>            
+            </ul>
+            <div class="col-8 mt-3 ms-auto container-fluid" style="float: left; padding: 15px; font-size: 18px; font-weight: bold; border-style: solid; border-width: 1px; border-radius: 0.2em; border-color: rgb(221, 218, 218);">
+                <div name="title">분류 1</div>
+                    <div class="mt-1 d-flex d-flex justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <input class="form-control me-1" type="text">
+                            <button class="btn btn-outline-success col-3" type="button">검색</button>
+                        </div>
+                        <div class="col-2">
+                            <select id="id-lang" class="form-select" onchange="changeValue();">
+                                <option value="5">5개</option>
+                                <option value="10" selected>10개</option>
+                                <option value="15">15개</option>
+                                <option value="20">20개</option>
+                                <option value="25">25개</option>
+                                <option value="30">30개</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class="col-12 mt-3 table table-striped">
+                        <thead style="font-size: 16px;">
+                            <th>컬럼1</th>
+                            <th>컬럼2</th>
+                            <th>컬럼3</th>
+                            <th>컬럼4</th>
+                            <th>컬럼5</th>
+                        </thead>
+                        <tbody style="font-size: 14px; font-weight: lighter;">
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                            <tr>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                                <td>값</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center; font-size: 15px;">
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">&lt;</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">1</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">2</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">3</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">4</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">5</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">6</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">7</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">8</a>
+                        <a href="#" style="padding-left: 0.2em; padding-right: 0.2em; text-decoration: none; border-style: solid; border-width: 1px;  background-color: gray; border-color: gray; color: white;">&gt;</a>
+                    </div>
                 </div>
-            </aside>
-        </div>
+            </div>
+            <ul class="list-group mt-3 col-2 container-fluid" name="ul2" style="float: right; position: relative; top: -17px;">
+                <li class="list-group-item">
+                    <a class="nav-link mb-3" href="#" style="font-weight: bold; font-size: 20px; ">구역 2</a>
+                </li>
+                <li class="list-group-item list-group-item-action" style="border-top-width: 2px; border-top-color: black;">
+                    <a class="nav-link mb-3" href="#">분류 A</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 B</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 C</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 D</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 E</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 F</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-link mb-3" href="#">분류 G</a>
+                </li>                   
+            </ul>
+        </section>
+        <footer class="container-fluid mt-5" style="clear: both;">
+            <div style="border-style: solid; border-color: rgb(221, 218, 218); border-width: 1px; border-radius: 0.2em; ">
+                <sapn class="my-2" style="float: right; clear: both; color: gray; font-size: 10px;">Copylight 2022.xxxxx Co. all rights reserved.</sapn>
+            </div>
+        </footer>
     </div>
-    <footer class="mx-3 my-5">
-        <div class="text-end text-muted">
-            Copyright 2022. xxxxx Co. all rights reserved.
-        </div>
-    </footer>
 </body>
 </html>
