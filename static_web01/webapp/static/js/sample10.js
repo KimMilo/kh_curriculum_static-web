@@ -1,7 +1,7 @@
 /** 문제
  *      jQuery 를 활용하여 링크주소와 주소이름을 등록하면
  *      목록에 추가될 수 있도록 하세요.
- */
+ */ 
 $(document).ready(function() {
   $("form > button").on("click", addBookmark); // 이벤트 등록
 });
