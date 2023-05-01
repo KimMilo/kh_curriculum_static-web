@@ -35,7 +35,7 @@
     - 인덱스 1번 th의 상위노드인 tr 접근 : var tr = th.parentElement;
             * tr의 첫 번째 자식 접근 : tr.firstElementChild;
             * tr의 마지막 자식 접근 : tr.lastElementChild;  
-*/
+*/ 
 
 function counting(element) { // element html의 this가 전달 됨.
 
