@@ -96,7 +96,7 @@
     top: -3px;
 }
 .login-foot{
-    height: 1em; /* float을 하다보면 영역을 벗어날 수 있어서 조정함 */
+    height: 1em; /* float을 하다보면 영역을 벗어날 수 있어서 조정함 */ 
     margin-top: 32px;
     margin-bottom: 32px;
     font-size: 0.6em; /* 글자크기는 부모 클래스 바뀌면 자식 이 후도 반영됨 */
