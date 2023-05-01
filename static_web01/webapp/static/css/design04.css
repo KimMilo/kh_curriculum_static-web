@@ -75,7 +75,7 @@ label{
     display: inline-block;
     box-sizing: border-box;
     font-size: 0.8em;
-    /* label 쓰다보면 라인이 잘 안맞아서 height랑 수직정렬(vertical-align) 활용해서 그나마 맞춤 */
+    /* label 쓰다보면 라인이 잘 안맞아서 height랑 수직정렬(vertical-align) 활용해서 그나마 맞춤 */ 
     height: 1.8em;
     vertical-align: middle;
 }
