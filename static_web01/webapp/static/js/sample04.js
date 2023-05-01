@@ -31,7 +31,7 @@
         - form.rdoHobby; 라디오 list 선택 (이때에도 체크한 값이 있으면 value 나옴 하나만 선택하니까)
         - form.rdoHobby.value; 라디오 list의 체크한 값 조회 
 */
-
+ 
 /* 유효성 검사용 함수 */
 function validForm() {
     /* 
