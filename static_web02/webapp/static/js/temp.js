@@ -34,7 +34,7 @@ function active2(e) {
     $(e.target).css("color", "blue");
     $(e.target).nextAll().css("color", "white");
     $(e.target).prevAll().css("color", "white");  
- }
+ } 
  function active4(e) {
     $(e.target).removeClass("text-light");
     $(e.target).css("text-decoration", "underline");
