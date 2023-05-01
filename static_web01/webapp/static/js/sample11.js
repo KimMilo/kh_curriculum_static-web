@@ -1,7 +1,7 @@
 /**
  * 문제 
  *      목록 up를 클릭하면 위로 down를 클릭하면 아래로 내려가게 만들기
- */
+ */ 
 
 $(document).ready(function() {
     $("span").each(function(index, element) {
