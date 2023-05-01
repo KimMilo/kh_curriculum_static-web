@@ -115,7 +115,7 @@ function createTableRow(columnCount) {
      * 패스워드 확인 입력 양식 옆에 "다시 입력하시오." 라는 메시지가 나오도록
      * 합니다. username 에서는 6자리 이상의 아이디가 아닌 경우 패스워드와 동일하게 
      * 아이디 입력 양식 옆에 "6자리 이상 입력하시오." 라는 메시지가 나오도록 합니다.
-     */
+     */ 
 
 function validCheck(form) {
     var isValid = true;
