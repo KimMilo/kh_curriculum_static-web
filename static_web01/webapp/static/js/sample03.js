@@ -34,7 +34,7 @@
     - document.getElementsByClassName("side-menu")[0].getElementsByClassName("menu-item"); 하면 side-menu 클래스의 .menu-item 클래스 전부 선택 
         : var ul 에 var ul = document.getElementsByClassName("side-menu")[0]; 잡고 
           그 다음에 ul.getElementsByClassName("menu-item"); 활용 하면 됨.
-*/
+*/ 
 
 function changeUpperLower() {
   //var listItems = document.getElementsByClassName("menu-item");
