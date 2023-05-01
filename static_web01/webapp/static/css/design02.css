@@ -2,7 +2,7 @@
     border-style: solid;
     border-width: thin;
     border-collapse: collapse;
-    width: 100%; /* 부모크기가 기준임 부모크기 대비 % */
+    width: 100%; /* 부모크기가 기준임 부모크기 대비 % */ 
 }
 .table-normal th,
 .table-normal td{
