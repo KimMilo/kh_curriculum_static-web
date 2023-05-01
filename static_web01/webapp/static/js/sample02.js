@@ -1,7 +1,7 @@
 function createList(id) {
     var resultDiv = document.getElementById(id);
     var items = getListItems();
-
+ 
     /* items 배열에 있는 데이터를 사용하여 ul, li 태그 문자열로 만드는 로직 작성 */
     var ulTag = "<ul>";
     for(let item of items) {

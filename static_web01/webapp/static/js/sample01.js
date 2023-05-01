@@ -47,7 +47,7 @@ var fn5 = function() {
     document.getElementById("print_area").innerText = "익명함수가 실행되었습니다.";
     return 10; /* 리턴값은 콘솔창에 함수 실행하면 출력됨. */
 }
-
+ 
 /* 익명 함수 : 함수를 만들 때 함수의 이름이 없이 만들어서 사용하는 함수 + 매개변수 넣기 */
 var fn6 = function(x, y) {
     console.log(x + y);
